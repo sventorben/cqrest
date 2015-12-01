@@ -1,0 +1,5 @@
+de.sven_torben.cqrest
+de.sven_torben.cqrest.annotations.handler
+de.sven_torben.cqrest.annotations.methods
+de.sven_torben.cqrest.filters
+de.sven_torben.cqrest.representations
