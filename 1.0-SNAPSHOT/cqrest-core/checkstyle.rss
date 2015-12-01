@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+Licensed to the Apache Software Foundation (ASF) under one
+or more contributor license agreements.  See the NOTICE file
+distributed with this work for additional information
+regarding copyright ownership.  The ASF licenses this file
+to you under the Apache License, Version 2.0 (the
+"License"); you may not use this file except in compliance
+with the License.  You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+KIND, either express or implied.  See the License for the
+specific language governing permissions and limitations
+under the License.
+-->
+<rss version="0.91">
+  <channel>
+    <title>cqrest - core - Checkstyle report</title>
+    <link>https://github.com/sventorben/cqrest/cqrest-core</link>
+    <description>cqrest - core - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2015 Sven-Torben Janus</copyright>
+    <item>
+      <title>File: 19,
+             Errors: 167,
+             Warnings: 0,
+             Infos: 0
+      </title>
+            <link>https://github.com/sventorben/cqrest/cqrest-core/checkstyle.html</link>
+      <description>
+        <p>Click <a href="https://github.com/sventorben/cqrest/cqrest-core/checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="https://github.com/sventorben/cqrest/cqrest-core/checkstyle.html#de.sven_torben.cqrest.CommandInfo.java">de/sven_torben/cqrest/CommandInfo.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/sventorben/cqrest/cqrest-core/checkstyle.html#de.sven_torben.cqrest.filters.QueryFilter.java">de/sven_torben/cqrest/filters/QueryFilter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/sventorben/cqrest/cqrest-core/checkstyle.html#de.sven_torben.cqrest.UnsupportedCommandType.java">de/sven_torben/cqrest/UnsupportedCommandType.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  8
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/sventorben/cqrest/cqrest-core/checkstyle.html#de.sven_torben.cqrest.filters.GetMappingFilter.java">de/sven_torben/cqrest/filters/GetMappingFilter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  2
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/sventorben/cqrest/cqrest-core/checkstyle.html#de.sven_torben.cqrest.filters.NotAllowedMethodsFilter.java">de/sven_torben/cqrest/filters/NotAllowedMethodsFilter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  4
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/sventorben/cqrest/cqrest-core/checkstyle.html#de.sven_torben.cqrest.filters.AllowHeaderFilter.java">de/sven_torben/cqrest/filters/AllowHeaderFilter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  6
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/sventorben/cqrest/cqrest-core/checkstyle.html#de.sven_torben.cqrest.filters.PostMappingFilter.java">de/sven_torben/cqrest/filters/PostMappingFilter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  3
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/sventorben/cqrest/cqrest-core/checkstyle.html#de.sven_torben.cqrest.annotations.handler.QueryHandler.java">de/sven_torben/cqrest/annotations/handler/QueryHandler.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  6
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/sventorben/cqrest/cqrest-core/checkstyle.html#de.sven_torben.cqrest.CommandContextResolver.java">de/sven_torben/cqrest/CommandContextResolver.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/sventorben/cqrest/cqrest-core/checkstyle.html#de.sven_torben.cqrest.filters.CommandFilter.java">de/sven_torben/cqrest/filters/CommandFilter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/sventorben/cqrest/cqrest-core/checkstyle.html#de.sven_torben.cqrest.annotations.methods.COMMAND.java">de/sven_torben/cqrest/annotations/methods/COMMAND.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  8
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/sventorben/cqrest/cqrest-core/checkstyle.html#de.sven_torben.cqrest.annotations.methods.QUERY.java">de/sven_torben/cqrest/annotations/methods/QUERY.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/sventorben/cqrest/cqrest-core/checkstyle.html#de.sven_torben.cqrest.OptionsInfo.java">de/sven_torben/cqrest/OptionsInfo.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/sventorben/cqrest/cqrest-core/checkstyle.html#de.sven_torben.cqrest.filters.MethodMappingFilter.java">de/sven_torben/cqrest/filters/MethodMappingFilter.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  9
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/sventorben/cqrest/cqrest-core/checkstyle.html#de.sven_torben.cqrest.annotations.handler.CommandHandler.java">de/sven_torben/cqrest/annotations/handler/CommandHandler.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  5
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/sventorben/cqrest/cqrest-core/checkstyle.html#de.sven_torben.cqrest.MediaTypes.java">de/sven_torben/cqrest/MediaTypes.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  14
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/sventorben/cqrest/cqrest-core/checkstyle.html#de.sven_torben.cqrest.HttpMethods.java">de/sven_torben/cqrest/HttpMethods.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  16
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/sventorben/cqrest/cqrest-core/checkstyle.html#de.sven_torben.cqrest.representations.Command.java">de/sven_torben/cqrest/representations/Command.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  7
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="https://github.com/sventorben/cqrest/cqrest-core/checkstyle.html#de.sven_torben.cqrest.CommandHandlingResource.java">de/sven_torben/cqrest/CommandHandlingResource.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  34
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+
