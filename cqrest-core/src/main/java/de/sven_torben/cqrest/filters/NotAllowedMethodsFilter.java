@@ -13,6 +13,14 @@ import javax.ws.rs.ext.Provider;
 
 import de.sven_torben.cqrest.HttpMethods;
 
+/**
+ * This {@linkplain ContainerRequestFilter} ensures that only COMMAND, QUERY and OPTIONS requests will be processed.
+ * <p>
+ * Note that clients may fall back to GET and POST requests instead of COMMAND and QUERY.
+ * </p>
+ * @see GetMappingFilter
+ * @see PostMappingFilter
+ */
 @Provider
 @PreMatching
 @Priority(MethodMappingFilter.PRIORITY + 1)

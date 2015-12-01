@@ -13,6 +13,10 @@ import javax.ws.rs.ext.Provider;
 
 import de.sven_torben.cqrest.HttpMethods;
 
+/**
+ * {@linkplain ContainerResponseFilter} that replaces the default HTTP Allow header with the values from 
+ * {@linkplain HttpMethods.ALL}.
+ */
 @Provider
 @Priority(Priorities.HEADER_DECORATOR + 1)
 public class AllowHeaderFilter implements ContainerResponseFilter {

@@ -11,6 +11,9 @@ import javax.ws.rs.ext.Provider;
 
 import de.sven_torben.cqrest.HttpMethods;
 
+/**
+ * This {@linkplain ContainerRequestFilter} ensures that QUERY request to not carry a payload.
+ */
 @Provider
 @Priority(Priorities.USER + 1)
 public class QueryFilter implements ContainerRequestFilter {

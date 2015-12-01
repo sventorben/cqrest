@@ -9,10 +9,15 @@ import java.lang.annotation.Target;
 import javax.ws.rs.HttpMethod;
 import javax.ws.rs.NameBinding;
 
-@Documented 
-@Target({ElementType.METHOD, ElementType.TYPE})  
-@Retention(RetentionPolicy.RUNTIME)  
-@HttpMethod("COMMAND")   
-@NameBinding  
+/**
+ * Indicates that the annotated method responds to cqrest COMMAND requests.
+ *
+ * @see HttpMethod
+ */
+@Documented
+@Target({ ElementType.METHOD, ElementType.TYPE })
+@Retention(RetentionPolicy.RUNTIME)
+@HttpMethod("COMMAND")
+@NameBinding
 public @interface COMMAND {
 }

@@ -13,6 +13,9 @@ import javax.ws.rs.ext.Provider;
 
 import de.sven_torben.cqrest.HttpMethods;
 
+/**
+ * This {@linkplain ContainerResponseFilter} ensures that responses to command request will not carry a payload.
+ */
 @Provider
 @Priority(Priorities.USER + 1)
 public class CommandFilter implements ContainerResponseFilter {

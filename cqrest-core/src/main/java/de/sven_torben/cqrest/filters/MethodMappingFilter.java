@@ -9,6 +9,10 @@ import javax.ws.rs.container.ContainerRequestFilter;
 
 import de.sven_torben.cqrest.HttpMethods;
 
+/**
+ * This {@linkplain ContainerRequestFilter} ensures that clients which do not natively support the cqrest protocol can 
+ * fallback to default HTTP methods. 
+ */
 public abstract class MethodMappingFilter implements ContainerRequestFilter {
 
     public static final int PRIORITY = Priorities.HEADER_DECORATOR + 1;

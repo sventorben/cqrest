@@ -9,10 +9,15 @@ import java.lang.annotation.Target;
 import javax.ws.rs.HttpMethod;
 import javax.ws.rs.NameBinding;
 
-@Target({ElementType.METHOD, ElementType.TYPE})  
-@Retention(RetentionPolicy.RUNTIME)  
+/**
+ * Indicates that the annotated method handles cqrest QUERY requests.
+ *
+ * @see HttpMethod
+ */
+@Target({ ElementType.METHOD, ElementType.TYPE })
+@Retention(RetentionPolicy.RUNTIME)
 @HttpMethod("QUERY")
-@Documented  
-@NameBinding  
+@Documented
+@NameBinding
 public @interface QueryHandler {
 }
