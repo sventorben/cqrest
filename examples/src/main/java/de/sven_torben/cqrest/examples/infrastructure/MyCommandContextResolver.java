@@ -7,7 +7,6 @@ import javax.ws.rs.ext.Provider;
 
 import org.reflections.Reflections;
 import org.reflections.scanners.SubTypesScanner;
-import org.reflections.scanners.TypeAnnotationsScanner;
 
 import de.sven_torben.cqrest.CommandContextResolver;
 import de.sven_torben.cqrest.MediaTypes;
@@ -25,8 +24,7 @@ public class MyCommandContextResolver extends CommandContextResolver<Command> {
 	protected Set<Class<? extends Command>> getCommandTypes() {
 		final Reflections reflections = new Reflections(
                 "de.sven_torben.cqrest.examples.domain.commands", 
-		        new SubTypesScanner(), 
-		        new TypeAnnotationsScanner());
+		        new SubTypesScanner());
 		return reflections.getSubTypesOf(Command.class);
 	}
 
