@@ -7,12 +7,10 @@ import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
 import de.sven_torben.cqrest.CommandHandlingResource;
-import de.sven_torben.cqrest.representations.Command;
 
 /**
- * Indicates that the annotated method handles {@link Command Commands}.
+ * Indicates that the annotated method handles commands.
  *
- * @see Command
  * @see CommandHandlingResource
  */
 @Target({ ElementType.METHOD, ElementType.TYPE })

@@ -4,13 +4,11 @@ import javax.ws.rs.core.Response.Status;
 import javax.ws.rs.core.Response.Status.Family;
 import javax.ws.rs.core.Response.StatusType;
 
-import de.sven_torben.cqrest.representations.Command;
-
 final class UnsupportedCommandType implements StatusType {
 
-    private final Class<? extends Command> commandType;
+    private final Class<?> commandType;
     
-    public UnsupportedCommandType(final Class<? extends Command> commandType) {
+    public UnsupportedCommandType(final Class<?> commandType) {
         this.commandType = commandType;
     }
     
