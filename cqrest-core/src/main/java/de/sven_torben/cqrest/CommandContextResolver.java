@@ -60,7 +60,7 @@ public abstract class CommandContextResolver<T> implements ContextResolver<Objec
             namedTypes = Collections.emptySet();
         } else {
             namedTypes = commandTypes.stream()
-                .map(cmdType -> new NamedType(cmdType, cmdType.getSimpleName().replaceAll("Command$", "")))
+                .map(cmdType -> new NamedType(cmdType, CommandInfo.nameForType(cmdType)))
                 .collect(Collectors.toSet());
             namedTypes.forEach(nt -> LOG.info(
                 String.format("Registering command of type %s for name %s", 

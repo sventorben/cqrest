@@ -6,12 +6,16 @@ final class CommandInfo {
 	
 	private final String command;
 
-	public CommandInfo(final String command) {
-		this.command = Objects.requireNonNull(command);
+	public CommandInfo(final Class<?> commandType) {
+		this.command = nameForType(Objects.requireNonNull(commandType));
 	}
 
-	public String getCommand() {
+    public String getCommand() {
 		return this.command;
 	}
-	
+
+    public static String nameForType(final Class<?> commandType) {
+        return commandType.getSimpleName().replaceAll("Command$", "");
+    }
+    
 }

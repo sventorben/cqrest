@@ -81,7 +81,7 @@ public abstract class CommandHandlingResource<T> {
 		return cmdHandlers.stream()
 		    .flatMap(handler -> Arrays.asList(handler.getParameterTypes()).stream())
 		    .filter(paramType -> this.commandType.isAssignableFrom(paramType))
-		    .map(commandType -> new CommandInfo(commandType.getSimpleName()))
+		    .map(commandType -> new CommandInfo(commandType))
 		    .collect(Collectors.toSet());
 	}
 	
