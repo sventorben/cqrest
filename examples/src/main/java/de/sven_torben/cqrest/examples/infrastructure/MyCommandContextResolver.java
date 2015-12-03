@@ -9,8 +9,6 @@ import org.reflections.Reflections;
 import org.reflections.scanners.SubTypesScanner;
 import org.reflections.scanners.TypeAnnotationsScanner;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import de.sven_torben.cqrest.CommandContextResolver;
 import de.sven_torben.cqrest.MediaTypes;
 import de.sven_torben.cqrest.examples.domain.commands.Command;
