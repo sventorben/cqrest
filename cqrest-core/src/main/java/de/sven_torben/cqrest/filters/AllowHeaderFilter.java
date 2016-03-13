@@ -15,7 +15,7 @@ import javax.ws.rs.ext.Provider;
 
 /**
  * {@linkplain ContainerResponseFilter} that replaces the default HTTP Allow header with the values
- * from {@linkplain HttpMethods.ALL}.
+ * from {@linkplain HttpMethods#ALL}.
  */
 @Provider
 @Priority(Priorities.HEADER_DECORATOR + 1)
