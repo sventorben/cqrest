@@ -1,4 +1,5 @@
-# cqREST - RESTful CQRS
+# cqREST - RESTful CQRS [![Build Status](https://travis-ci.org/sventorben/cqrest.svg?branch=master)](https://travis-ci.org/sventorben/cqrest) [![Code Coverage](https://img.shields.io/codecov/c/github/sventorben/cqrest/master.svg)](https://codecov.io/github/sventorben/cqrest?branch=master)
+
 
 cqREST aims to be a protocol supporting CQRS over HTTP in conformance with the REST architectural style.
 
