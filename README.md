@@ -3,7 +3,8 @@
 
 cqREST aims to be a protocol supporting CQRS over HTTP in conformance with the REST architectural style.
 
-The JAX-RS based implementation should serve as a very simple illustration of the protocol.
+The [JAX-RS based implementation](cqrest-core/README.md) should serve as a very simple illustration of the protocol.
+Some usage examples can be found in subfolder [examples](examples).
 
 ## Background information
 
