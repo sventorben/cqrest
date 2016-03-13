@@ -13,8 +13,9 @@
 
 	<modules>
 		<module>cqrest-core</module>
+		<module>examples</module>
 	</modules>
-	
+
 	<inceptionYear>
 		2015
 	</inceptionYear>
@@ -48,13 +49,13 @@
 	</issueManagement>
 
 	<distributionManagement>
-	  <site>
-		<id>github-pages-site</id>
-		<name>Deployment through GitHub's site deployment plugin</name>
-		<url>${project.version}</url>
-	  </site>
+		<site>
+			<id>github-pages-site</id>
+			<name>Deployment through GitHub's site deployment plugin</name>
+			<url>${project.version}</url>
+		</site>
 	</distributionManagement>
-	
+
 	<scm>
 		<url>https://github.com/sventorben/cqrest</url>
 		<connection>scm:git:git://github.com/sventorben/cqrest.git</connection>
@@ -119,10 +120,31 @@
 					<version>2.5</version>
 				</plugin>
 				<plugin>
-			        <groupId>org.jacoco</groupId>
-			        <artifactId>jacoco-maven-plugin</artifactId>
-			        <version>0.7.5.201505241946</version>
-			    </plugin>
+					<groupId>org.jacoco</groupId>
+					<artifactId>jacoco-maven-plugin</artifactId>
+					<version>0.7.5.201505241946</version>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-checkstyle-plugin</artifactId>
+					<version>2.17</version>
+					<executions>
+						<execution>
+							<configuration>
+								<configLocation>google_checks.xml</configLocation>
+								<suppressionsLocation>checkstyle-suppressions.xml</suppressionsLocation>
+								<encoding>UTF-8</encoding>
+								<consoleOutput>true</consoleOutput>
+								<failsOnError>true</failsOnError>
+								<includeTestSourceDirectory>true</includeTestSourceDirectory>
+								<violationSeverity>warning</violationSeverity>
+							</configuration>
+							<goals>
+								<goal>check</goal>
+							</goals>
+						</execution>
+					</executions>
+				</plugin>
 				<!-- Github -->
 				<plugin>
 					<groupId>com.github.github</groupId>
@@ -174,6 +196,10 @@
 								<groupId>org.apache.maven.plugins</groupId>
 								<artifactId>maven-checkstyle-plugin</artifactId>
 								<version>2.17</version>
+								<configuration>
+									<configLocation>google_checks.xml</configLocation>
+									<suppressionsLocation>checkstyle-suppressions.xml</suppressionsLocation>
+								</configuration>
 							</plugin>
 						</reportPlugins>
 					</configuration>
@@ -206,6 +232,10 @@
 		</pluginManagement>
 		<plugins>
 			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+			</plugin>
+			<plugin>
 				<groupId>com.github.github</groupId>
 				<artifactId>site-maven-plugin</artifactId>
 			</plugin>
@@ -214,28 +244,28 @@
 
 	<dependencyManagement>
 		<dependencies>
-			
+
 			<dependency>
 				<groupId>org.reflections</groupId>
 				<artifactId>reflections</artifactId>
 				<version>0.9.10</version>
 			</dependency>
-			
-			<!--  Provided  -->
+
+			<!-- Provided -->
 			<dependency>
 				<groupId>javax.ws.rs</groupId>
 				<artifactId>javax.ws.rs-api</artifactId>
 				<version>2.0.1</version>
 				<scope>provided</scope>
 			</dependency>
-		
+
 			<dependency>
 				<groupId>javax.annotation</groupId>
 				<artifactId>javax.annotation-api</artifactId>
 				<version>1.2</version>
 				<scope>provided</scope>
 			</dependency>
-		
+
 			<dependency>
 				<groupId>com.fasterxml.jackson.core</groupId>
 				<artifactId>jackson-annotations</artifactId>
@@ -248,14 +278,14 @@
 				<version>2.6.3</version>
 				<scope>provided</scope>
 			</dependency>
-		
+
 			<dependency>
 				<groupId>org.slf4j</groupId>
 				<artifactId>slf4j-api</artifactId>
 				<version>1.7.13</version>
 				<scope>provided</scope>
 			</dependency>
-		
+
 			<!-- Testing -->
 			<dependency>
 				<groupId>junit</groupId>
