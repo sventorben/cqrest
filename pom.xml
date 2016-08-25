@@ -4,7 +4,7 @@
 
 	<groupId>de.sven-torben.cqrest</groupId>
 	<artifactId>parent</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.2-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>${project.groupId}:${project.artifactId}</name>
 	<description>cqREST protocol supporting CQRS over HTTP in conformance with the REST architectural style.</description>
@@ -67,7 +67,7 @@
 		<url>git@github.com:sventorben/cqrest.git</url>
 		<connection>scm:git:git://github.com/sventorben/cqrest.git</connection>
 		<developerConnection>scm:git:git@github.com:sventorben/cqrest.git</developerConnection>
-		<tag>0.0.1</tag>
+		<tag>HEAD</tag>
 	</scm>
 
 	<licenses>
