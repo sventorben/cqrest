@@ -64,21 +64,27 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>org.jboss.spec</groupId>
-				<artifactId>jboss-javaee-7.0</artifactId>
-				<version>1.0.3.Final</version>
-				<type>pom</type>
-				<scope>import</scope>
+			    <groupId>org.wildfly.bom</groupId>
+			    <artifactId>wildfly-javaee7</artifactId>
+			    <version>10.1.0.Final</version>
+			    <type>pom</type>
+			    <scope>import</scope>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
-	
+
 	<dependencies>
 	
 		<dependency>
 			<groupId>de.sven-torben.cqrest</groupId>
 			<artifactId>cqrest-core</artifactId>
 			<version>${project.version}</version>
+		</dependency>
+
+		<dependency>
+		    <groupId>javax</groupId>
+		    <artifactId>javaee-api</artifactId>
+		    <scope>provided</scope>
 		</dependency>
 
 		<dependency>

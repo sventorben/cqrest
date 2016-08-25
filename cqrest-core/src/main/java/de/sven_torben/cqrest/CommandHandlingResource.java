@@ -13,9 +13,10 @@ import java.util.Collection;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.Set;
-import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 
+import javax.annotation.Resource;
+import javax.enterprise.concurrent.ManagedExecutorService;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.OPTIONS;
 import javax.ws.rs.container.AsyncResponse;
@@ -27,13 +28,20 @@ public abstract class CommandHandlingResource<T> {
   private final Logger log = LoggerFactory.getLogger(this.getClass());
   private final Class<? extends T> commandType;
 
+  @Resource(mappedName = "java:comp/DefaultManagedExecutorService")
+  private ManagedExecutorService executorService;
+
   public CommandHandlingResource(final Class<? extends T> commandType) {
     this.commandType = Objects.requireNonNull(commandType);
   }
 
   /**
-   * Generic command handler.
-   * 
+   * Generic command handler which uses {@linkplain ManagedExecutorService} for asyn request
+   * processing.
+   *
+   * </p>
+   * Dispatches the {@code command} a {@inkplain CommandHandler} annotated method of this instance.
+   *
    * @param asyncResponse
    *          Async HTTP response.
    * @param command
@@ -43,7 +51,7 @@ public abstract class CommandHandlingResource<T> {
   @Consumes(MediaTypes.CQREST_COMMAND_JSON)
   public void handleCommandRequest(@Suspended final AsyncResponse asyncResponse, final T command) {
 
-    Executors.newSingleThreadExecutor().submit(() -> {
+    this.executorService.submit(() -> {
       try {
         final Method handler = this.findCommandHandler(command);
         if (handler == null) {
@@ -52,7 +60,7 @@ public abstract class CommandHandlingResource<T> {
           handler.setAccessible(true);
           handler.invoke(this, asyncResponse, command);
         }
-      } catch (NoSuchMethodException | InvocationTargetException | IllegalAccessException e) {
+      } catch (Exception e) {
         this.log.error("Handling command failed!", e);
         asyncResponse.cancel();
       }
