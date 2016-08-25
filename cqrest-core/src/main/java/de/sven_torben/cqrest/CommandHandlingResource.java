@@ -6,7 +6,6 @@ import de.sven_torben.cqrest.annotations.methods.COMMAND;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.Collection;
@@ -39,8 +38,8 @@ public abstract class CommandHandlingResource<T> {
    * Generic command handler which uses {@linkplain ManagedExecutorService} for asyn request
    * processing.
    *
-   * </p>
-   * Dispatches the {@code command} a {@inkplain CommandHandler} annotated method of this instance.
+   * <p>Dispatches the {@code command} a {@linkplain CommandHandler} annotated method of
+   * this instance.</p>
    *
    * @param asyncResponse
    *          Async HTTP response.
